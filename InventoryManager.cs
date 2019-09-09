@@ -71,6 +71,18 @@ public class InventoryManager : MonoBehaviour
 
     public void GetItems(int TypeNum, int GetNum)
     {
+        // 타입별로 아이탬을 구분하기위해 배열 게임오브젝트 변수를 사용하지 않음
+       /* StartCoroutine(DropItems(DropItemArray[TypeNum], GetNum));
+        if (HaveItems.ContainsKey(TypeNum))
+        {
+            HaveItems[TypeNum] += GetNum;
+        }
+        else
+        {
+            HaveItems.Add(1, GetNum);
+        }
+        AllItems += GetNum;*/
+
         switch (TypeNum)
         {
             case 1:
